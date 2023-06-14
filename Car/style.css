@@ -1,0 +1,333 @@
+/*A cor e o tamanho coloquei no body*/
+body{
+    width: 100%;
+    height: 650px;  
+    overflow: hidden;
+    background: linear-gradient(0, #120c56cb, #000000dc); /*cria o efeito do fundo passando tres cores*/
+  }
+
+  /*Aqui o modelo da estrelas, coloquei o tanto de estrela que eu precisava*/
+  .stars{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    animation: anim-stars 10s linear infinite; /*aqui estou chamndo animação para fazer como se estivesse em movimento o ceu*/
+    box-shadow: 50px 30px white,
+    100px 80px white,
+    80px 120px white,
+    300px 20px white,
+    400px 90px white,
+    50px 120px white,
+    600px 20px white,
+    750px 130px white,
+    800px 50px white,
+    950px 100px white,
+    970px 30px white,
+
+    600px 130px white,
+    500px 50px white,
+    590px 70px white,
+    680px 90px white,
+
+    1060px 60px white,
+    1080px 120px white,
+    1180px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    320px 100px white,
+    1160px 100px white,
+    
+    1160px 160px white,
+    1250px 80px white,
+    1380px 35px white,
+    1299px 135px white,
+    1400px 110px white,
+    1499px 20px white,
+    1520px 140px white,
+
+    1630px 35px white,
+    1599px 100px white,
+    1700px 50px white,
+    1739px 135px white,
+    1770px 80px white,
+    1819px 26px white,
+    1850px 120px white,
+
+    1890px 130px white,
+    1900px 50px white,
+    1950px 10px white,
+    1960px 90px white;
+  }
+
+  /*Aqui é animação do ceu*/
+  @keyframes anim-stars {
+      from {
+          transform: translateX(0px);
+      }
+      to {
+          transform: translateX(-90px);
+      }
+  }
+
+  /*Aqui é sobre o primeiro car vermelho */
+    .controle{
+      position: absolute;
+      right: 30px;
+      top: 560px;
+       animation: slidein 10s linear infinite;
+      animation-delay: 8s;
+      visibility: hidden;
+    }
+    /*Esse nav, navv, nave são para imagens tirando o fundo branco delas e algumas tem a ilução de fundo*/
+  .nav{
+    mix-blend-mode: multiply;
+    -webkit-box-reflect: below -10px linear-gradient(transparent,rgb(255, 255, 255));
+    max-width:250px;
+    max-height:250px;
+  }
+  
+   /*Animação para que iamgem comece da direita pra esquerda*/
+    @keyframes slidein {
+      from {
+        margin-right:-15%;
+      }
+    
+      to {
+       margin-right:100%;
+       visibility: visible;
+     }
+    }
+  /*controle das rodas do car vermelho*/
+  .con{
+      display: flex;
+      position: absolute;
+      margin-left: -20px;
+      margin-top: -109px;
+  }
+  .rodas{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 23px;
+      color: green;
+      border: 1px solid rgba(0, 0, 0, 0.521);
+      background-color: rgba(37, 37, 37, 0.712);
+      margin: 56px;
+      border-radius: 20px;
+      width: 35px;
+      height: 35px;
+      animation-name: loading;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+  }
+  /*Animação para fazer a roda girar*/
+  @keyframes loading {
+      0% {
+          transform: rotate(360deg);
+          
+      }
+      100% {
+          transform: rotate(0);
+      }
+  }
+  /*Controle da rodas da imagem de ilusão*/
+  .conn{
+      display: flex;
+      position: absolute;
+      margin-left: -20px;
+      margin-top: -60px;
+  }
+  .roda{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 23px;
+      color: green;
+      border: 1px solid rgba(0, 0, 0, 0.521);
+      background-color: rgba(37, 37, 37, 0.712);
+      margin: 56px;
+      border-radius: 20px;
+      width: 35px;
+      height: 35px;
+      animation-name: loadinng;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+  }
+  /*Animação da roda para gira do sentindo contrario da roda original*/
+  @keyframes loadinng {
+      0% {
+          transform: rotate(0);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+  
+  /*Controle do car azul*/
+  .controlee{
+    position: absolute;
+    right: 30px;
+    top: 560px;
+     animation: slidein 10s linear infinite;
+    animation-delay: 11s;
+  visibility: hidden;
+  }
+  .navv{
+    mix-blend-mode: multiply;
+    -webkit-box-reflect: below -10px linear-gradient(transparent,rgb(255, 255, 255));
+    max-width:250px;
+    max-height:250px;
+  }
+  .coon{
+    display: flex;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -105px;
+  }
+  .rodass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    color: rgb(252, 252, 252);
+    border: 1px solid rgba(0, 0, 0, 0.521);
+    background-color: rgba(37, 37, 37, 0.712);
+    margin: 56px;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    animation-name: looading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes looading {
+  0% {
+        transform: rotate(360deg);
+    
+  }
+  100% {
+    transform: rotate(0);
+  }
+  }
+  
+  .coonn{
+    display: flex;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -60px;
+  }
+  .rodaa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    color: rgb(247, 245, 245);
+    border: 1px solid rgba(0, 0, 0, 0.521);
+    background-color: rgba(37, 37, 37, 0.712);
+    margin: 56px;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    animation-name: loadinnggg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes loadinnggg {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  }
+  
+  /*Controle do car police*/
+  .controlees{
+    position: absolute;
+    left: 1px;
+    top: 740px;
+    animation: slideiin 10s linear infinite;
+    animation-delay: 8s;
+    visibility: hidden;
+  }
+  .navi{
+    mix-blend-mode: multiply;
+    max-width:320px;
+    max-height:320px;
+  }
+  .coone{
+    display: flex;
+    position: absolute;
+    top: 70px;
+  }
+  .rodasa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(253, 249, 249);
+    border: 1px solid rgba(0, 0, 0, 0.521);
+    background-color: rgba(37, 37, 37, 0.712);
+    margin: 62px;
+    border-radius: 20px;
+    width: 38px;
+    height: 38px;
+    animation-name: loadinnggg;/*Este loadinnggg é animação da ilusão mas ele se encaixa perfeito nesse dois carros pq eles anda nesse sentindo*/
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+    /*Animação para que iamgem comece da esquerda pra direita*/
+  @keyframes slideiin {
+    from {
+      margin-left:-15%;
+    }
+  
+    to {
+     margin-left:100%;
+     visibility: visible;
+   }
+  }
+
+  /*Car pokemon*/
+  .controleesa{
+    position: absolute;
+    left: 1px;
+    top: 748px;
+    animation: slideiin 10s linear infinite;
+    animation-delay: 12s;
+    visibility: hidden;
+  }
+  .navis{
+    mix-blend-mode: multiply;
+    max-width:320px;
+    max-height:320px;
+  }
+  .coones{
+    display: flex;
+    position: absolute;
+    margin-left: -8px;
+    top: 71px;
+  }
+  .rodasas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: rgba(189, 185, 185, 0.753);
+    border: 1px solid rgba(0, 0, 0, 0.521);
+    background-color: rgba(37, 37, 37, 0.712);
+    margin: 62px;
+    border-radius: 20px;
+    width: 38px;
+    height: 38px;
+    animation-name: loadinnggg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
